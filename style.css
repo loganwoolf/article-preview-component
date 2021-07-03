@@ -67,15 +67,25 @@ main {
 .share-button {
 	align-self: center;
 	background: var(--white);
-	border-radius: 20px;
+  border-radius: 20px;
 }
-.share-button > img {
-	margin: 8px;
+.medium {
+  background: var(--med);
+}
+.arrow {
+  margin: 8px;
+}
+.brighten {
+  filter: brightness(500%);
 }
 .share {
 	color: var(--light);
 	font-weight: 700;
-	letter-spacing: 0.4em;
+  letter-spacing: 0.4em;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .social {
 	display: flex;
