@@ -19,12 +19,10 @@ main {
 	margin: 5rem 0;
 	display: flex;
 	flex-direction: column;
-	/* width: 375px; */
 }
 .image {
-	height: 170px;
-	width: auto;
-	background: url(./images/drawers.jpg) center/cover no-repeat;
+	height: 200px;
+	background: url(./images/drawers.jpg) 50% 25%/cover no-repeat;
 	border-radius: 12px 12px 0 0;
 }
 .post {
