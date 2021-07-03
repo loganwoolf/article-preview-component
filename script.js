@@ -1,15 +1,18 @@
+const arrow = document.querySelector('.arrow');
 const authorPanel = document.querySelector('.author-panel');
 const avatar = document.querySelector('.avatar');
-const shareLabel = document.querySelector('.share');
 const postInfo = document.querySelector('.post-info');
-const socialButtons = document.querySelector('.social');
-const arrow = document.querySelector('.arrow');
-const darkColor = 'hsl(217, 19%, 35%)';
-
 const shareButton = document.querySelector('.share-button');
+const shareLabel = document.querySelector('.share');
+const socialButtons = document.querySelector('.social');
 
-function showSharePanel() {
-  if (!shareButton.classList.contains('dark')) {
+const body = document.querySelector('body');
+const post = document.querySelector('.post');
+const image = document.querySelector('.image');
+
+function toggleSharePanel() {
+  if (!shareButton.classList.contains('medium')) {
+    console.log('showing')
     //darken background of authorPanel
     authorPanel.classList.add('dark');
     //switch to dark button;
@@ -25,9 +28,28 @@ function showSharePanel() {
     shareLabel.classList.remove('hidden');
     //unhide socialButtons
     socialButtons.classList.remove('hidden');
+  } else {
+    console.log('hiding');
+    authorPanel.classList.remove('dark');
+    shareButton.classList.remove('medium');
+    arrow.classList.remove('brighten');
+    avatar.classList.remove('hidden');
+    postInfo.classList.remove('hidden');
+    shareLabel.classList.add('hidden');
+    socialButtons.classList.add('hidden');
+  }
+}
 
+function hideSharePanel() {
+  if (shareButton.classList.contains('medium')) {
+    console.log('hiding');
 
   }
-
 }
-shareButton.addEventListener('click', showSharePanel);
+
+
+
+shareButton.addEventListener('click', toggleSharePanel);
+// body.addEventListener('click', hideSharePanel);
+// post.addEventListener('click', hideSharePanel);
+// image.addEventListener('click', hideSharePanel);
