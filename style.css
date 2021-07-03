@@ -25,16 +25,46 @@ main {
   height: 200px;
   width: auto;
   background: url(./images/drawers.jpg) center/cover no-repeat;
-  border-radius: 10px 10px 0 0;
+  border-radius: 12px 12px 0 0;
 }
 .post {
   background: white;
   padding: 2rem;
-  max-width: 31.5ch; /*desktop 45ch?? */
+  width: 31.5ch; /*desktop 45ch?? */
   color: var(--med);
+  border-radius: 0 0 12px 12px;
 }
 .post > h1 {
 font-size: 16px;
 font-weight: 700;
 color: var(--dark)
+}
+.post > p {
+line-height: 1.5em;
+}
+.author-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.avatar {
+  width: 42px;
+  border-radius: 24px;
+}
+.post-info {
+  flex-grow: 2;
+}
+.name {
+  font-weight: 700;
+  color: var(--dark);
+}
+.share-button {
+  align-self: center;
+  background: var(--white);
+  border-radius: 20px;
+}
+.share-button > img {
+  margin: 8px;
+
 }
