@@ -1,70 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 :root {
-  --dark: hsl(217, 19%, 35%); /*Very Dark Grayish Blue*/
-  --med: hsl(214, 17%, 51%); /*Desaturated Dark Blue*/
-  --light: hsl(212, 23%, 69%); /*Grayish Blue*/
-  --white: hsl(210, 46%, 95%); /*Light Grayish Blue*/
+	--dark: hsl(217, 19%, 35%); /*Very Dark Grayish Blue*/
+	--med: hsl(214, 17%, 51%); /*Desaturated Dark Blue*/
+	--light: hsl(212, 23%, 69%); /*Grayish Blue*/
+	--white: hsl(210, 46%, 95%); /*Light Grayish Blue*/
 }
 body {
-  margin: 0;
-  font-family: 'Manrope', sans-serif;
-  font-size: 13px;
-  background: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	margin: 0;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+	background: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 main {
-  margin: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  /* width: 375px; */
+	margin: 5rem 0;
+	display: flex;
+	flex-direction: column;
+	/* width: 375px; */
 }
 .image {
-  height: 200px;
-  width: auto;
-  background: url(./images/drawers.jpg) center/cover no-repeat;
-  border-radius: 12px 12px 0 0;
+	height: 170px;
+	width: auto;
+	background: url(./images/drawers.jpg) center/cover no-repeat;
+	border-radius: 12px 12px 0 0;
 }
 .post {
-  background: white;
-  padding: 2rem;
-  width: 31.5ch; /*desktop 45ch?? */
-  color: var(--med);
-  border-radius: 0 0 12px 12px;
+	background: white;
+	padding: 1.5rem 2rem 0.5rem;
+	width: 31.5ch; /*desktop 45ch?? */
+	color: var(--med);
 }
 .post > h1 {
-font-size: 16px;
-font-weight: 700;
-color: var(--dark)
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--dark);
 }
 .post > p {
-line-height: 1.5em;
+	line-height: 1.6em;
 }
 .author-panel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
+	background: white;
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	border-radius: 0 0 12px 12px;
 }
 .avatar {
-  width: 42px;
-  border-radius: 24px;
+	width: 42px;
+	border-radius: 24px;
 }
 .post-info {
-  flex-grow: 2;
+	flex-grow: 2;
 }
 .name {
-  font-weight: 700;
-  color: var(--dark);
+	font-weight: 700;
+	color: var(--dark);
+}
+.date {
+	opacity: 50%;
 }
 .share-button {
-  align-self: center;
-  background: var(--white);
-  border-radius: 20px;
+	align-self: center;
+	background: var(--white);
+	border-radius: 20px;
 }
 .share-button > img {
-  margin: 8px;
-
+	margin: 8px;
+}
+.share {
+	color: var(--light);
+	font-weight: 700;
+	letter-spacing: 0.4em;
+}
+.social {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 1rem;
+	flex-grow: 2;
 }
