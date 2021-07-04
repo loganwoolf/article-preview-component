@@ -12,7 +12,6 @@ const image = document.querySelector('.image');
 
 function toggleSharePanel() {
   if (!shareButton.classList.contains('medium')) {
-    console.log('showing')
     //darken background of authorPanel
     authorPanel.classList.add('dark');
     //switch to dark button;
@@ -29,7 +28,6 @@ function toggleSharePanel() {
     //unhide socialButtons
     socialButtons.classList.remove('hidden');
   } else {
-    console.log('hiding');
     authorPanel.classList.remove('dark');
     shareButton.classList.remove('medium');
     arrow.classList.remove('brighten');
@@ -42,14 +40,18 @@ function toggleSharePanel() {
 
 function hideSharePanel() {
   if (shareButton.classList.contains('medium')) {
-    console.log('hiding');
-
+    authorPanel.classList.remove('dark');
+    shareButton.classList.remove('medium');
+    arrow.classList.remove('brighten');
+    avatar.classList.remove('hidden');
+    postInfo.classList.remove('hidden');
+    shareLabel.classList.add('hidden');
+    socialButtons.classList.add('hidden');
   }
 }
 
 
 
 shareButton.addEventListener('click', toggleSharePanel);
-// body.addEventListener('click', hideSharePanel);
-// post.addEventListener('click', hideSharePanel);
-// image.addEventListener('click', hideSharePanel);
+post.addEventListener('click', hideSharePanel);
+image.addEventListener('click', hideSharePanel);
