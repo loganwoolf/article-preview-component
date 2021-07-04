@@ -25,6 +25,10 @@ main {
 	background: url(./images/drawers.jpg) 50% 25%/cover no-repeat;
 	border-radius: 12px 12px 0 0;
 }
+section {
+	display: flex;
+	flex-direction: column;
+}
 .post {
 	background: white;
 	padding: 1.5rem 2rem 0.5rem;
@@ -102,10 +106,7 @@ main {
   display: none;
 }
 
-@media (min-width: 460px) {
-	body{
-
-	}
+@media (min-width: 760px) {
 	main {
 		flex-direction: row;
 	}
