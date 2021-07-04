@@ -73,9 +73,11 @@ main {
 }
 .arrow {
   margin: 8px;
+  transition: transform 0.2s linear;
 }
 .brighten {
   filter: brightness(500%);
+  transform: rotate(180deg) translateY(-2px);
 }
 .share {
 	color: var(--light);
