@@ -16,7 +16,7 @@ body {
 	align-items: center;
 }
 main {
-	margin: 5rem 0;
+	margin: 5rem 2rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -100,4 +100,29 @@ main {
 }
 .hidden {
   display: none;
+}
+
+@media (min-width: 460px) {
+	body{
+
+	}
+	main {
+		flex-direction: row;
+	}
+	.image {
+		height: unset;
+		width: 300px;
+		background: url(./images/drawers.jpg) center left/cover no-repeat;
+	border-radius: 12px 0 0 12px;
+	}
+	.post {
+		border-radius: 0 12px 0 0;
+		width: 45ch;
+	}
+	.post > h1 {
+		font-size: 20px;
+	}
+	.author-panel {
+		border-radius: 0 0 12px 0;
+	}
 }
